@@ -3,7 +3,7 @@ const cron = require("node-cron");
 const request = require("request");
 const interested = require("./interested.json");
 
-cron.schedule("*/5 * * * *", () => {
+cron.schedule("*/15 * * * *", () => {
   getCryptos();
 });
 
@@ -59,8 +59,6 @@ function notification(cryptos) {
 }
 
 function send(message) {
-  console.log(message)
-  return;
   const options = {
     url: process.env.API_NOTIFY_URL,
     method: "POST",
