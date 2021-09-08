@@ -1,4 +1,4 @@
-import { db } from "../db";
+import db from "../utils/db";
 
 export async function getConditions(callback) {
   const snapshot = await db.collection("conditions").get();

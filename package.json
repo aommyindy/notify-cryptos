@@ -12,8 +12,7 @@
     "request": "^2.88.2"
   },
   "scripts": {
-    "start": "babel-node src/index.js",
-    "watch": "nodemon src/index.js --exec babel-node -e js"
+    "cron": "babel-node src/cron.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.15.4",
