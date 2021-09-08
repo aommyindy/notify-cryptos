@@ -2,11 +2,11 @@
     "cryptos": [
         {
             "key": "BITKUB_AXS_THB",
-            "priceLowerThan": 2200.09
+            "priceLowerThan": 2000
         },
         {
             "key": "BITKUB_AXS_THB",
-            "priceHigherThan": 2800.09
+            "priceHigherThan": 2800
         },
         {
             "key": "SATANG_PRO_SOL_THB",
@@ -14,7 +14,7 @@
         },
         {
             "key": "SATANG_PRO_SOL_THB",
-            "priceLowerThan": 5300
+            "priceLowerThan": 4900
         }
     ]
 }

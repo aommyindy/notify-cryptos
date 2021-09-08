@@ -43,7 +43,9 @@ function notification(cryptos) {
         key == interestedCrypto.key &&
         crypto.lastPrice < interestedCrypto.priceLowerThan
       ) {
-        send(`${key} ${crypto.lastPrice} < ${interestedCrypto.priceLowerThan}`);
+        send(
+          `${key} ${crypto.lastPrice} < ${interestedCrypto.priceLowerThan} ${crypto.quoteCurrency}`
+        );
       }
 
       if (
@@ -51,7 +53,7 @@ function notification(cryptos) {
         crypto.lastPrice > interestedCrypto.priceHigherThan
       ) {
         send(
-          `${key} ${crypto.lastPrice} > ${interestedCrypto.priceHigherThan}`
+          `${key} ${crypto.lastPrice} > ${interestedCrypto.priceHigherThan} ${crypto.quoteCurrency}`
         );
       }
     });
