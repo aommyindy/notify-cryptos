@@ -1,10 +1,14 @@
-## requires ##
+# Notify Cryptos #
+## Requires ##
 - line notify
 - api key form https://crypto-notify.co/account
 - node 12+
-- create `.env` File
-
+- Create `.env` File Run `mv .env.example .env`
+- install firebase SDK https://firebase.google.com/docs/firestore/quickstart
+-  Create `firebase-config.json` key for 
+    https://console.cloud.google.com/iam-admin/serviceaccounts?project=your-project need (Firebase Admin SDK Service Agent)
 
 ## How to Install ##
 - `yarn`
-- `node index`
+- `yarn start` for runtime
+- `yarn watch` for dev
