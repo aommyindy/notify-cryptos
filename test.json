@@ -1,0 +1,1436 @@
+{
+    "statusCode": 200,
+    "success": true,
+    "message": "238 asset(s)",
+    "data": [
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "BTC",
+            "market": "ZIPMEX",
+            "lastPrice": 1599999.99
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "ETH",
+            "market": "ZIPMEX",
+            "lastPrice": 117078
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "XRP",
+            "market": "ZIPMEX",
+            "lastPrice": 37.8
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "LTC",
+            "market": "ZIPMEX",
+            "lastPrice": 6157.853
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "BCH",
+            "market": "ZIPMEX",
+            "lastPrice": 22545.12
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "USDT",
+            "market": "ZIPMEX",
+            "lastPrice": 33.85
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "GOLD",
+            "market": "ZIPMEX",
+            "lastPrice": 2260.02
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "LINK",
+            "market": "ZIPMEX",
+            "lastPrice": 955
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "USDC",
+            "market": "ZIPMEX",
+            "lastPrice": 33.7721
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "OMG",
+            "market": "ZIPMEX",
+            "lastPrice": 258.7
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "SXP",
+            "market": "ZIPMEX",
+            "lastPrice": 94
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "MKR",
+            "market": "ZIPMEX",
+            "lastPrice": 102501.89
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "ENJ",
+            "market": "ZIPMEX",
+            "lastPrice": 58.53388
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "YFI",
+            "market": "ZIPMEX",
+            "lastPrice": 1185000.01
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "C8P",
+            "market": "ZIPMEX",
+            "lastPrice": 36.65
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "ZMT",
+            "market": "ZIPMEX",
+            "lastPrice": 64.303
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "COMP",
+            "market": "ZIPMEX",
+            "lastPrice": 14136.6
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "SAND",
+            "market": "ZIPMEX",
+            "lastPrice": 26.00002
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "XLM",
+            "market": "ZIPMEX",
+            "lastPrice": 12.01
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "SIX",
+            "market": "ZIPMEX",
+            "lastPrice": 2.1899
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "AXS",
+            "market": "ZIPMEX",
+            "lastPrice": 2449.99
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "ICP",
+            "market": "SATANG_PRO",
+            "lastPrice": 2080
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "DOT",
+            "market": "SATANG_PRO",
+            "lastPrice": 957.1
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "TUSD",
+            "market": "SATANG_PRO",
+            "lastPrice": 33.99
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "BCH",
+            "market": "SATANG_PRO",
+            "lastPrice": 22311
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "LTC",
+            "market": "SATANG_PRO",
+            "lastPrice": 6500
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "XMR",
+            "market": "SATANG_PRO",
+            "lastPrice": 9998.97
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "ZEC",
+            "market": "SATANG_PRO",
+            "lastPrice": 4600
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "DASH",
+            "market": "SATANG_PRO",
+            "lastPrice": 7240
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "BAND",
+            "market": "SATANG_PRO",
+            "lastPrice": 281
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "XTZ",
+            "market": "SATANG_PRO",
+            "lastPrice": 151
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "DAI",
+            "market": "SATANG_PRO",
+            "lastPrice": 32.37
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "LINK",
+            "market": "SATANG_PRO",
+            "lastPrice": 975
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "LUNA",
+            "market": "SATANG_PRO",
+            "lastPrice": 942.13
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "USDC",
+            "market": "SATANG_PRO",
+            "lastPrice": 32.13
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "BAT",
+            "market": "SATANG_PRO",
+            "lastPrice": 26.99
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "CAKE",
+            "market": "SATANG_PRO",
+            "lastPrice": 692.12
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "HBAR",
+            "market": "SATANG_PRO",
+            "lastPrice": 9.4
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "BUSD",
+            "market": "SATANG_PRO",
+            "lastPrice": 33.95
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "VET",
+            "market": "SATANG_PRO",
+            "lastPrice": 4.2
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "ADA",
+            "market": "SATANG_PRO",
+            "lastPrice": 84.48
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "JFIN",
+            "market": "SATANG_PRO",
+            "lastPrice": 10
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "ATOM",
+            "market": "SATANG_PRO",
+            "lastPrice": 740
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "ETC",
+            "market": "SATANG_PRO",
+            "lastPrice": 2011.01
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "ALGO",
+            "market": "SATANG_PRO",
+            "lastPrice": 46.16
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "XZC",
+            "market": "SATANG_PRO",
+            "lastPrice": 250.5
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "DOGE",
+            "market": "SATANG_PRO",
+            "lastPrice": 8.808
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "BNB",
+            "market": "SATANG_PRO",
+            "lastPrice": 14599.92
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "USDT",
+            "market": "SATANG_PRO",
+            "lastPrice": 33.96
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "XRP",
+            "market": "SATANG_PRO",
+            "lastPrice": 37.8
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "SOL",
+            "market": "SATANG_PRO",
+            "lastPrice": 5910
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "XLM",
+            "market": "SATANG_PRO",
+            "lastPrice": 11.5
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "TRX",
+            "market": "SATANG_PRO",
+            "lastPrice": 3.02
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "BTC",
+            "market": "SATANG_PRO",
+            "lastPrice": 1580000
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "ETH",
+            "market": "SATANG_PRO",
+            "lastPrice": 116800
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "EOS",
+            "market": "SATANG_PRO",
+            "lastPrice": 167
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "AAVE",
+            "market": "BITKUB",
+            "lastPrice": 11557.02
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "ABT",
+            "market": "BITKUB",
+            "lastPrice": 6.15
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "ADA",
+            "market": "BITKUB",
+            "lastPrice": 84
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "ALPHA",
+            "market": "BITKUB",
+            "lastPrice": 39
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "AXS",
+            "market": "BITKUB",
+            "lastPrice": 2255.82
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "BAL",
+            "market": "BITKUB",
+            "lastPrice": 905
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "BAND",
+            "market": "BITKUB",
+            "lastPrice": 298.05
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "BAT",
+            "market": "BITKUB",
+            "lastPrice": 26.5
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "BCH",
+            "market": "BITKUB",
+            "lastPrice": 22707.64
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "BNB",
+            "market": "BITKUB",
+            "lastPrice": 14062.69
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "BSV",
+            "market": "BITKUB",
+            "lastPrice": 5404.89
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "BTC",
+            "market": "BITKUB",
+            "lastPrice": 1578999.64
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "COMP",
+            "market": "BITKUB",
+            "lastPrice": 14300
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "CRV",
+            "market": "BITKUB",
+            "lastPrice": 67.88
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "CVC",
+            "market": "BITKUB",
+            "lastPrice": 17.34
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "DAI",
+            "market": "BITKUB",
+            "lastPrice": 33.7
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "DOGE",
+            "market": "BITKUB",
+            "lastPrice": 8.6393
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "DOT",
+            "market": "BITKUB",
+            "lastPrice": 946.85
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "ENJ",
+            "market": "BITKUB",
+            "lastPrice": 59.57
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "ETH",
+            "market": "BITKUB",
+            "lastPrice": 116664.79
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "EVX",
+            "market": "BITKUB",
+            "lastPrice": 18.35
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "GLM",
+            "market": "BITKUB",
+            "lastPrice": 18.49
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "IOST",
+            "market": "BITKUB",
+            "lastPrice": 1.81
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "JFIN",
+            "market": "BITKUB",
+            "lastPrice": 9.94
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "KNC",
+            "market": "BITKUB",
+            "lastPrice": 60.1
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "KSM",
+            "market": "BITKUB",
+            "lastPrice": 11202.12
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "KUB",
+            "market": "BITKUB",
+            "lastPrice": 25.85
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "LINK",
+            "market": "BITKUB",
+            "lastPrice": 951.5
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "LTC",
+            "market": "BITKUB",
+            "lastPrice": 6060.02
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "MANA",
+            "market": "BITKUB",
+            "lastPrice": 28.31
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "MKR",
+            "market": "BITKUB",
+            "lastPrice": 104000
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "NEAR",
+            "market": "BITKUB",
+            "lastPrice": 276
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "OMG",
+            "market": "BITKUB",
+            "lastPrice": 258.19
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "POW",
+            "market": "BITKUB",
+            "lastPrice": 12.13
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "RDN",
+            "market": "BITKUB",
+            "lastPrice": 16.29
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "SCRT",
+            "market": "BITKUB",
+            "lastPrice": 56.5
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "SIX",
+            "market": "BITKUB",
+            "lastPrice": 2.16
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "SNT",
+            "market": "BITKUB",
+            "lastPrice": 3.24
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "UNI",
+            "market": "BITKUB",
+            "lastPrice": 826.45
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "USDC",
+            "market": "BITKUB",
+            "lastPrice": 33.36
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "USDT",
+            "market": "BITKUB",
+            "lastPrice": 33.78
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "WAN",
+            "market": "BITKUB",
+            "lastPrice": 33.51
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "XLM",
+            "market": "BITKUB",
+            "lastPrice": 11.35
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "XRP",
+            "market": "BITKUB",
+            "lastPrice": 37.52
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "YFI",
+            "market": "BITKUB",
+            "lastPrice": 1201780
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "ZIL",
+            "market": "BITKUB",
+            "lastPrice": 3.4705
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "ZRX",
+            "market": "BITKUB",
+            "lastPrice": 33.66
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "BTC",
+            "market": "BINANCE",
+            "lastPrice": 46413.02
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "XLM",
+            "market": "BINANCE",
+            "lastPrice": 0.3324
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "CAKE",
+            "market": "BINANCE",
+            "lastPrice": 20.05
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "XRP",
+            "market": "BINANCE",
+            "lastPrice": 1.1054
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "UNI",
+            "market": "BINANCE",
+            "lastPrice": 24.19
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "ETH",
+            "market": "BINANCE",
+            "lastPrice": 3439.04
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "ADA",
+            "market": "BINANCE",
+            "lastPrice": 2.473
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "DOT",
+            "market": "BINANCE",
+            "lastPrice": 27.79
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "BNB",
+            "market": "BINANCE",
+            "lastPrice": 414.4
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "SUSHI",
+            "market": "BINANCE",
+            "lastPrice": 11.002
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "LUNA",
+            "market": "BINANCE",
+            "lastPrice": 27.77
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "BAKE",
+            "market": "BINANCE",
+            "lastPrice": 2.087
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "ENJ",
+            "market": "BINANCE",
+            "lastPrice": 1.739
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "TRX",
+            "market": "BINANCE",
+            "lastPrice": 0.08661
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "DOGE",
+            "market": "BINANCE",
+            "lastPrice": 0.2542
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "BTT",
+            "market": "BINANCE",
+            "lastPrice": 0.00402
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "LTC",
+            "market": "BINANCE",
+            "lastPrice": 178.4
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "LINK",
+            "market": "BINANCE",
+            "lastPrice": 28.06
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "MANA",
+            "market": "BINANCE",
+            "lastPrice": 0.8361
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "COMP",
+            "market": "BINANCE",
+            "lastPrice": 419.8
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "ZRX",
+            "market": "BINANCE",
+            "lastPrice": 0.303
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "MATIC",
+            "market": "BINANCE",
+            "lastPrice": 1.336
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "1INCH",
+            "market": "BINANCE",
+            "lastPrice": 2.878
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "BAL",
+            "market": "BINANCE",
+            "lastPrice": 26.44
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "ALPHA",
+            "market": "BINANCE",
+            "lastPrice": 1.1519
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "CRV",
+            "market": "BINANCE",
+            "lastPrice": 1.982
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "BAND",
+            "market": "BINANCE",
+            "lastPrice": 8.267
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "AUTO",
+            "market": "BINANCE",
+            "lastPrice": 1431.1
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "C98",
+            "market": "BINANCE",
+            "lastPrice": 3.377
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "GTO",
+            "market": "BINANCE",
+            "lastPrice": 0.04183
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "FIL",
+            "market": "BINANCE",
+            "lastPrice": 83.35
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "SLP",
+            "market": "BINANCE",
+            "lastPrice": 0.0966
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "MASK",
+            "market": "BINANCE",
+            "lastPrice": 8.975
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "THETA",
+            "market": "BINANCE",
+            "lastPrice": 6.792
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "MBOX",
+            "market": "BINANCE",
+            "lastPrice": 4.981
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "SOL",
+            "market": "BINANCE",
+            "lastPrice": 172.27
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "AVAX",
+            "market": "BINANCE",
+            "lastPrice": 37.58
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "ALICE",
+            "market": "BINANCE",
+            "lastPrice": 13.33
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "TLM",
+            "market": "BINANCE",
+            "lastPrice": 0.23
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "ZEN",
+            "market": "BINANCE",
+            "lastPrice": 80.26
+        },
+        {
+            "quoteCurrency": "BNB",
+            "baseCurrency": "XRP",
+            "market": "BINANCE",
+            "lastPrice": 0.002667
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "RSR",
+            "market": "BINANCE",
+            "lastPrice": 0.03871
+        },
+        {
+            "quoteCurrency": "BNB",
+            "baseCurrency": "MATIC",
+            "market": "BINANCE",
+            "lastPrice": 0.003225
+        },
+        {
+            "quoteCurrency": "BNB",
+            "baseCurrency": "XLM",
+            "market": "BINANCE",
+            "lastPrice": 0.0008018
+        },
+        {
+            "quoteCurrency": "BNB",
+            "baseCurrency": "CAKE",
+            "market": "BINANCE",
+            "lastPrice": 0.04834
+        },
+        {
+            "quoteCurrency": "BNB",
+            "baseCurrency": "ADA",
+            "market": "BINANCE",
+            "lastPrice": 0.005963
+        },
+        {
+            "quoteCurrency": "BNB",
+            "baseCurrency": "UNI",
+            "market": "BINANCE",
+            "lastPrice": 0.05838
+        },
+        {
+            "quoteCurrency": "BNB",
+            "baseCurrency": "SUSHI",
+            "market": "BINANCE",
+            "lastPrice": 0.02653
+        },
+        {
+            "quoteCurrency": "BNB",
+            "baseCurrency": "DOT",
+            "market": "BINANCE",
+            "lastPrice": 0.067
+        },
+        {
+            "quoteCurrency": "BNB",
+            "baseCurrency": "LUNA",
+            "market": "BINANCE",
+            "lastPrice": 0.06703
+        },
+        {
+            "quoteCurrency": "BNB",
+            "baseCurrency": "BTT",
+            "market": "BINANCE",
+            "lastPrice": 0.00000967
+        },
+        {
+            "quoteCurrency": "BNB",
+            "baseCurrency": "TRX",
+            "market": "BINANCE",
+            "lastPrice": 0.0002086
+        },
+        {
+            "quoteCurrency": "BNB",
+            "baseCurrency": "ENJ",
+            "market": "BINANCE",
+            "lastPrice": 0.004182
+        },
+        {
+            "quoteCurrency": "BNB",
+            "baseCurrency": "BAKE",
+            "market": "BINANCE",
+            "lastPrice": 0.005036
+        },
+        {
+            "quoteCurrency": "BNB",
+            "baseCurrency": "LTC",
+            "market": "BINANCE",
+            "lastPrice": 0.4304
+        },
+        {
+            "quoteCurrency": "BNB",
+            "baseCurrency": "ALPHA",
+            "market": "BINANCE",
+            "lastPrice": 0.002779
+        },
+        {
+            "quoteCurrency": "BNB",
+            "baseCurrency": "CRV",
+            "market": "BINANCE",
+            "lastPrice": 0.004822
+        },
+        {
+            "quoteCurrency": "BNB",
+            "baseCurrency": "AXS",
+            "market": "BINANCE",
+            "lastPrice": 0.1613
+        },
+        {
+            "quoteCurrency": "BNB",
+            "baseCurrency": "BAND",
+            "market": "BINANCE",
+            "lastPrice": 0.01985
+        },
+        {
+            "quoteCurrency": "BNB",
+            "baseCurrency": "SOL",
+            "market": "BINANCE",
+            "lastPrice": 0.4155
+        },
+        {
+            "quoteCurrency": "BNB",
+            "baseCurrency": "FIL",
+            "market": "BINANCE",
+            "lastPrice": 0.2009
+        },
+        {
+            "quoteCurrency": "BNB",
+            "baseCurrency": "MBOX",
+            "market": "BINANCE",
+            "lastPrice": 0.012043
+        },
+        {
+            "quoteCurrency": "BNB",
+            "baseCurrency": "AVAX",
+            "market": "BINANCE",
+            "lastPrice": 0.09037
+        },
+        {
+            "quoteCurrency": "BNB",
+            "baseCurrency": "C98",
+            "market": "BINANCE",
+            "lastPrice": 0.008167
+        },
+        {
+            "quoteCurrency": "BNB",
+            "baseCurrency": "MASK",
+            "market": "BINANCE",
+            "lastPrice": 0.02163
+        },
+        {
+            "quoteCurrency": "BNB",
+            "baseCurrency": "THETA",
+            "market": "BINANCE",
+            "lastPrice": 0.01638
+        },
+        {
+            "quoteCurrency": "BNB",
+            "baseCurrency": "RSR",
+            "market": "BINANCE",
+            "lastPrice": 0.0000934
+        },
+        {
+            "quoteCurrency": "BNB",
+            "baseCurrency": "ZEN",
+            "market": "BINANCE",
+            "lastPrice": 0.1938
+        },
+        {
+            "quoteCurrency": "BUSD",
+            "baseCurrency": "ETH",
+            "market": "BINANCE",
+            "lastPrice": 3441.13
+        },
+        {
+            "quoteCurrency": "BUSD",
+            "baseCurrency": "BTC",
+            "market": "BINANCE",
+            "lastPrice": 46436.55
+        },
+        {
+            "quoteCurrency": "BUSD",
+            "baseCurrency": "BNB",
+            "market": "BINANCE",
+            "lastPrice": 414.9
+        },
+        {
+            "quoteCurrency": "BUSD",
+            "baseCurrency": "CAKE",
+            "market": "BINANCE",
+            "lastPrice": 20.06
+        },
+        {
+            "quoteCurrency": "BUSD",
+            "baseCurrency": "XLM",
+            "market": "BINANCE",
+            "lastPrice": 0.3327
+        },
+        {
+            "quoteCurrency": "BUSD",
+            "baseCurrency": "XRP",
+            "market": "BINANCE",
+            "lastPrice": 1.106
+        },
+        {
+            "quoteCurrency": "BUSD",
+            "baseCurrency": "DOGE",
+            "market": "BINANCE",
+            "lastPrice": 0.2542
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "AXS",
+            "market": "BINANCE",
+            "lastPrice": 66.84
+        },
+        {
+            "quoteCurrency": "BUSD",
+            "baseCurrency": "UNI",
+            "market": "BINANCE",
+            "lastPrice": 24.16
+        },
+        {
+            "quoteCurrency": "BUSD",
+            "baseCurrency": "ADA",
+            "market": "BINANCE",
+            "lastPrice": 2.474
+        },
+        {
+            "quoteCurrency": "BUSD",
+            "baseCurrency": "MATIC",
+            "market": "BINANCE",
+            "lastPrice": 1.337
+        },
+        {
+            "quoteCurrency": "BUSD",
+            "baseCurrency": "DOT",
+            "market": "BINANCE",
+            "lastPrice": 27.8
+        },
+        {
+            "quoteCurrency": "BUSD",
+            "baseCurrency": "BTT",
+            "market": "BINANCE",
+            "lastPrice": 0.004009
+        },
+        {
+            "quoteCurrency": "BUSD",
+            "baseCurrency": "SUSHI",
+            "market": "BINANCE",
+            "lastPrice": 11.002
+        },
+        {
+            "quoteCurrency": "BUSD",
+            "baseCurrency": "LUNA",
+            "market": "BINANCE",
+            "lastPrice": 27.78
+        },
+        {
+            "quoteCurrency": "BUSD",
+            "baseCurrency": "BAKE",
+            "market": "BINANCE",
+            "lastPrice": 2.087
+        },
+        {
+            "quoteCurrency": "BUSD",
+            "baseCurrency": "TRX",
+            "market": "BINANCE",
+            "lastPrice": 0.08666
+        },
+        {
+            "quoteCurrency": "BUSD",
+            "baseCurrency": "ENJ",
+            "market": "BINANCE",
+            "lastPrice": 1.738
+        },
+        {
+            "quoteCurrency": "BUSD",
+            "baseCurrency": "LINK",
+            "market": "BINANCE",
+            "lastPrice": 28.06
+        },
+        {
+            "quoteCurrency": "BUSD",
+            "baseCurrency": "LTC",
+            "market": "BINANCE",
+            "lastPrice": 178.6
+        },
+        {
+            "quoteCurrency": "BUSD",
+            "baseCurrency": "MANA",
+            "market": "BINANCE",
+            "lastPrice": 0.8367
+        },
+        {
+            "quoteCurrency": "BUSD",
+            "baseCurrency": "COMP",
+            "market": "BINANCE",
+            "lastPrice": 420.6
+        },
+        {
+            "quoteCurrency": "BUSD",
+            "baseCurrency": "ZRX",
+            "market": "BINANCE",
+            "lastPrice": 0.9949
+        },
+        {
+            "quoteCurrency": "BUSD",
+            "baseCurrency": "CRV",
+            "market": "BINANCE",
+            "lastPrice": 1.98
+        },
+        {
+            "quoteCurrency": "BUSD",
+            "baseCurrency": "BAL",
+            "market": "BINANCE",
+            "lastPrice": 26.4
+        },
+        {
+            "quoteCurrency": "BUSD",
+            "baseCurrency": "AUTO",
+            "market": "BINANCE",
+            "lastPrice": 1420.1
+        },
+        {
+            "quoteCurrency": "BUSD",
+            "baseCurrency": "ALPHA",
+            "market": "BINANCE",
+            "lastPrice": 1.1509
+        },
+        {
+            "quoteCurrency": "BUSD",
+            "baseCurrency": "1INCH",
+            "market": "BINANCE",
+            "lastPrice": 2.877
+        },
+        {
+            "quoteCurrency": "BUSD",
+            "baseCurrency": "BAND",
+            "market": "BINANCE",
+            "lastPrice": 8.276
+        },
+        {
+            "quoteCurrency": "BUSD",
+            "baseCurrency": "SLP",
+            "market": "BINANCE",
+            "lastPrice": 0.0966
+        },
+        {
+            "quoteCurrency": "BUSD",
+            "baseCurrency": "AXS",
+            "market": "BINANCE",
+            "lastPrice": 66.91
+        },
+        {
+            "quoteCurrency": "BUSD",
+            "baseCurrency": "SOL",
+            "market": "BINANCE",
+            "lastPrice": 172.46
+        },
+        {
+            "quoteCurrency": "BUSD",
+            "baseCurrency": "FIL",
+            "market": "BINANCE",
+            "lastPrice": 83.39
+        },
+        {
+            "quoteCurrency": "BUSD",
+            "baseCurrency": "C98",
+            "market": "BINANCE",
+            "lastPrice": 3.382
+        },
+        {
+            "quoteCurrency": "BUSD",
+            "baseCurrency": "MBOX",
+            "market": "BINANCE",
+            "lastPrice": 4.985
+        },
+        {
+            "quoteCurrency": "BUSD",
+            "baseCurrency": "MASK",
+            "market": "BINANCE",
+            "lastPrice": 8.981
+        },
+        {
+            "quoteCurrency": "BUSD",
+            "baseCurrency": "THETA",
+            "market": "BINANCE",
+            "lastPrice": 6.784
+        },
+        {
+            "quoteCurrency": "BUSD",
+            "baseCurrency": "AVAX",
+            "market": "BINANCE",
+            "lastPrice": 37.63
+        },
+        {
+            "quoteCurrency": "BUSD",
+            "baseCurrency": "TLM",
+            "market": "BINANCE",
+            "lastPrice": 0.2302
+        },
+        {
+            "quoteCurrency": "BUSD",
+            "baseCurrency": "ALICE",
+            "market": "BINANCE",
+            "lastPrice": 13.34
+        },
+        {
+            "quoteCurrency": "BUSD",
+            "baseCurrency": "RSR",
+            "market": "BINANCE",
+            "lastPrice": 0.03875
+        },
+        {
+            "quoteCurrency": "BUSD",
+            "baseCurrency": "ZEN",
+            "market": "BINANCE",
+            "lastPrice": 79.46
+        },
+        {
+            "quoteCurrency": "USD",
+            "baseCurrency": "DOP",
+            "market": "BSC_TOKENS",
+            "lastPrice": 0.08460146263201676
+        },
+        {
+            "quoteCurrency": "USD",
+            "baseCurrency": "LEAF",
+            "market": "BSC_TOKENS",
+            "lastPrice": 0.045462997487140305
+        },
+        {
+            "quoteCurrency": "USD",
+            "baseCurrency": "CAKE",
+            "market": "BSC_TOKENS",
+            "lastPrice": 20.69061262013166
+        },
+        {
+            "quoteCurrency": "USD",
+            "baseCurrency": "WAD",
+            "market": "BSC_TOKENS",
+            "lastPrice": 0.5981452433700706
+        },
+        {
+            "quoteCurrency": "USD",
+            "baseCurrency": "XVS",
+            "market": "BSC_TOKENS",
+            "lastPrice": 31.71616244562259
+        },
+        {
+            "quoteCurrency": "USD",
+            "baseCurrency": "BIFI",
+            "market": "BSC_TOKENS",
+            "lastPrice": 1126.432762396463
+        },
+        {
+            "quoteCurrency": "USD",
+            "baseCurrency": "BANANA",
+            "market": "BSC_TOKENS",
+            "lastPrice": 3.600509731386207
+        },
+        {
+            "quoteCurrency": "USD",
+            "baseCurrency": "FINIX",
+            "market": "BSC_TOKENS",
+            "lastPrice": 0.7587000830049665
+        },
+        {
+            "quoteCurrency": "USD",
+            "baseCurrency": "ADA",
+            "market": "BSC_TOKENS",
+            "lastPrice": 2.53947064039316
+        },
+        {
+            "quoteCurrency": "USD",
+            "baseCurrency": "TENFI",
+            "market": "BSC_TOKENS",
+            "lastPrice": 0.30082618080976864
+        },
+        {
+            "quoteCurrency": "USD",
+            "baseCurrency": "BSW",
+            "market": "BSC_TOKENS",
+            "lastPrice": 0.7473159251015247
+        },
+        {
+            "quoteCurrency": "USD",
+            "baseCurrency": "DOPX",
+            "market": "BSC_TOKENS",
+            "lastPrice": 0.08312138907495581
+        },
+        {
+            "quoteCurrency": "USD",
+            "baseCurrency": "ALPACA",
+            "market": "BSC_TOKENS",
+            "lastPrice": 1.0491564376797466
+        },
+        {
+            "quoteCurrency": "USD",
+            "baseCurrency": "DMC",
+            "market": "BSC_TOKENS",
+            "lastPrice": 0.00021703604149949255
+        },
+        {
+            "quoteCurrency": "USD",
+            "baseCurrency": "JDI",
+            "market": "BSC_TOKENS",
+            "lastPrice": 0.05935749647414403
+        },
+        {
+            "quoteCurrency": "USD",
+            "baseCurrency": "BUNNY",
+            "market": "BSC_TOKENS",
+            "lastPrice": 5.9134374917319175
+        },
+        {
+            "quoteCurrency": "USD",
+            "baseCurrency": "ZOON",
+            "market": "BSC_TOKENS",
+            "lastPrice": 0.025035033352147053
+        },
+        {
+            "quoteCurrency": "USD",
+            "baseCurrency": "TLM",
+            "market": "BSC_TOKENS",
+            "lastPrice": 0.23793978736439275
+        },
+        {
+            "quoteCurrency": "THB",
+            "baseCurrency": "FLOW",
+            "market": "SATANG_PRO",
+            "lastPrice": 750.09
+        },
+        {
+            "quoteCurrency": "USD",
+            "baseCurrency": "PVU",
+            "market": "BSC_TOKENS",
+            "lastPrice": 12.63309201167945
+        },
+        {
+            "quoteCurrency": "USDT",
+            "baseCurrency": "ZMT",
+            "market": "ZIPMEX",
+            "lastPrice": 1.9011
+        },
+        {
+            "quoteCurrency": "IDR",
+            "baseCurrency": "ZMT",
+            "market": "ZIPMEX",
+            "lastPrice": 27687
+        },
+        {
+            "quoteCurrency": "SGD",
+            "baseCurrency": "ZMT",
+            "market": "ZIPMEX",
+            "lastPrice": 2.5658
+        },
+        {
+            "quoteCurrency": "USD",
+            "baseCurrency": "ZMT",
+            "market": "ZIPMEX",
+            "lastPrice": 1.899
+        },
+        {
+            "quoteCurrency": "AUD",
+            "baseCurrency": "ZMT",
+            "market": "ZIPMEX",
+            "lastPrice": 2.5718
+        }
+    ],
+    "timestamp": 1631071685614
+}
