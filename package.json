@@ -6,7 +6,19 @@
   "license": "MIT",
   "dependencies": {
     "dotenv": "^10.0.0",
+    "firebase-admin": "^9.11.1",
     "node-cron": "^3.0.0",
+    "nodemon": "^2.0.12",
     "request": "^2.88.2"
+  },
+  "scripts": {
+    "start": "babel-node src/index.js",
+    "watch": "nodemon src/index.js --exec babel-node -e js"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.15.4",
+    "@babel/core": "^7.15.5",
+    "@babel/node": "^7.15.4",
+    "@babel/preset-env": "^7.15.4"
   }
 }
