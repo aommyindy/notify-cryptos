@@ -10,7 +10,6 @@ cron.schedule("*/15 * * * *", () => {
 function checkConditions() {
   getMarkets((cryptos) => {
     getConditions((condition) => {
-      console.log(condition)
       if (cryptos[condition.key]) {
         const message = getMessage(condition.key, condition, cryptos[condition.key]);
         if (message) {
