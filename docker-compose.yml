@@ -3,3 +3,5 @@ services:
   cron:
     build:
       context: ./
+    volumes: 
+      - .:/app
