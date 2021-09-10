@@ -2,7 +2,7 @@
 ## Requires ##
 - line notify
 - api key form https://crypto-notify.co/account
-- node 12+
+- node 14+
 - Create `.env` File Run `mv .env.example .env`
 - install firebase SDK https://firebase.google.com/docs/firestore/quickstart
 -  Create `serviceAccountKey.json` key for 
