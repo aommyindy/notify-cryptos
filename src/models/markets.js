@@ -1,6 +1,5 @@
 require("dotenv").config();
 import request from "request";
-const dataTest = require("../../test.json");
 
 export function getMarkets(callback) {
   let cryptoInfoKeys = [];

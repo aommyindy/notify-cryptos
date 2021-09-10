@@ -2,7 +2,7 @@ require("dotenv").config();
 import request from "request";
 
 export async function send(message) {
-  if (process.env.NODE_ENV == 'dev') {
+  if (process.env.NODE_ENV == 'development') {
     console.log(message);
     return;
   }
