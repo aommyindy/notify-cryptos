@@ -4,17 +4,15 @@ import { getConditions } from "./models/conditions";
 import { send } from './models/notify';
 
 cron.schedule("*/15 * * * *", () => {
-  checkConditions();
+  run();
 });
 
-function checkConditions() {
+function run() {
   getMarkets((cryptos) => {
     getConditions((condition) => {
-      console.log(condition)
       if (cryptos[condition.key]) {
-        const message = getMessage(condition.key, condition, cryptos[condition.key]);
+        const message = checkConditions(condition, cryptos[condition.key]);
         if (message) {
-          console.log(message)
           send(message)
         }
       }
@@ -22,11 +20,11 @@ function checkConditions() {
   });
 }
 
-function getMessage(key, condition, crypto) {
+function checkConditions(condition, crypto) {
   if (crypto.lastPrice < condition.priceLowerThan) {
-    return `${key} ${crypto.lastPrice} < ${condition.priceLowerThan} ${crypto.quoteCurrency}`;
+    return `${crypto.baseCurrency} ${crypto.lastPrice} < ${condition.priceLowerThan} ${crypto.quoteCurrency}`;
   }
   if (crypto.lastPrice > condition.priceHigherThan) {
-    return `${key} ${crypto.lastPrice} > ${condition.priceHigherThan} ${crypto.quoteCurrency}`;
+    return `${crypto.baseCurrency}  ${crypto.lastPrice} > ${condition.priceHigherThan} ${crypto.quoteCurrency}`;
   }
 }
