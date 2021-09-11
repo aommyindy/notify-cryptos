@@ -2,6 +2,8 @@
 **/.env
 **/dist
 
+**yarn-error.log
+
 # Firebase
 **/serviceAccountKey.json
 **/.firebaserc
