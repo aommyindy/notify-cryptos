@@ -2,8 +2,9 @@ import request from 'request'
 require('dotenv').config()
 
 export async function send (message) {
+  console.log(message)
+
   if (process.env.NODE_ENV === 'development') {
-    console.log(message)
     return
   }
 

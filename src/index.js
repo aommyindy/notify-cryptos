@@ -22,9 +22,9 @@ function run () {
 
 function checkConditions (condition, crypto) {
   if (crypto.lastPrice < condition.priceLowerThan) {
-    return `${crypto.baseCurrency} ${crypto.lastPrice} < ${condition.priceLowerThan} ${crypto.quoteCurrency}`
+    return `${crypto.baseCurrency} (${crypto.market}) ${crypto.lastPrice} < ${condition.priceLowerThan} ${crypto.quoteCurrency}`
   }
   if (crypto.lastPrice > condition.priceHigherThan) {
-    return `${crypto.baseCurrency}  ${crypto.lastPrice} > ${condition.priceHigherThan} ${crypto.quoteCurrency}`
+    return `${crypto.baseCurrency} (${crypto.market}) ${crypto.lastPrice} > ${condition.priceHigherThan} ${crypto.quoteCurrency}`
   }
 }
