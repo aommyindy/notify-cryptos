@@ -6,10 +6,20 @@ admin.initializeApp()
 const firestore = admin.firestore()
 
 const regionFunctions = functions.region("asia-northeast3")
-const config = functions.config()
 
 const { getMarkets } = require("./utils/markets")
 const { send } = require("./utils/lineNotify")
+
+exports.run = regionFunctions.https.onRequest(async (req, res) => {
+    const conditions = await getConditions();
+    getMarkets().then((cryptos) => {
+        res.json({
+            conditions,
+            cryptos
+        });
+    });
+
+});
 
 exports.scheduledFunction = regionFunctions
     .pubsub.schedule("*/15 * * * *")
@@ -21,7 +31,6 @@ exports.scheduledFunction = regionFunctions
 async function run() {
     const cryptos = await getMarkets();
     const conditions = await getConditions();
-
     conditions.forEach(async (condition) => {
         if (cryptos[condition.key]) {
             const message = checkConditions(condition, cryptos[condition.key])
@@ -35,7 +44,7 @@ async function run() {
 
 function getConditions() {
     return new Promise((resolve, reject) => {
-        let conditions = []
+        const conditions = []
         firestore.collection('conditions').get().then((snapshot) => {
             if (snapshot.empty) reject(conditions)
             snapshot.forEach((item) => {

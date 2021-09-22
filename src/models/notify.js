@@ -1,13 +1,8 @@
 import request from 'request'
 require('dotenv').config()
+const functions = require('firebase-functions')
 
 export async function send (message) {
-  console.log(message)
-
-  if (process.env.NODE_ENV === 'development') {
-    return
-  }
-
   const options = {
     url: process.env.API_NOTIFY_URL,
     method: 'POST',
@@ -20,7 +15,7 @@ export async function send (message) {
   request(options, (error, response, body) => {
     if (error) {
       const jsonBody = JSON.parse(body)
-      console.log(jsonBody)
+      functions.logger.error(jsonBody)
     }
   })
 }
