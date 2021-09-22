@@ -7,3 +7,6 @@
 # Firebase
 **/serviceAccountKey.json
 **/.firebaserc
+
+
+*.log

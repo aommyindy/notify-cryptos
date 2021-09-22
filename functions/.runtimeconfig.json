@@ -1,0 +1,13 @@
+{
+  "bitkub": {
+    "api": "https://api.bitkub.com/api/market/ticker"
+  },
+  "kinta": {
+    "api":"https://api.kinta.dev/market/ticker",
+    "authorization": "Ucdf410aebce6ff84fb91e38d87afccd9"
+  },
+  "linenotify": {
+    "api": "https://notify-api.line.me/api/notify",
+    "authorization": "wOnqV6o3pjHkTGQJF2vgXBWETS5eR7yKPbejYEZBjN1"
+  }
+}

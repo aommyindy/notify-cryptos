@@ -1,10 +1,10 @@
-import db from "../utils/db";
+import db from '../utils/db'
 
-export async function getConditions(callback) {
-  const snapshot = await db.collection("conditions").get();
+export async function getConditions (callback) {
+  const snapshot = await db.collection('conditions').get()
 
-  if (snapshot.empty) return [];
+  if (snapshot.empty) return []
   snapshot.forEach((condition) => {
     callback(condition.data())
-  });
+  })
 }

@@ -8,6 +8,8 @@
     "dotenv": "^10.0.0",
     "firebase": "^9.0.2",
     "firebase-admin": "^9.11.1",
+    "firebase-functions-test": "^0.3.2",
+    "mocha": "^9.1.1",
     "node-cron": "^3.0.0",
     "nodemon": "^2.0.12",
     "request": "^2.88.2"
