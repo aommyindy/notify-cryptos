@@ -2,6 +2,9 @@
 
 const functions = require("firebase-functions");
 const admin = require("firebase-admin");
+const { WebhookClient } = require("dialogflow-fulfillment");
+// const { Card, Suggestion } = require('dialogflow-fulfillment');
+
 admin.initializeApp();
 const firestore = admin.firestore();
 
@@ -26,6 +29,40 @@ exports.scheduledFunction = regionFunctions.pubsub
     .onRun((context) => {
         run();
     });
+
+process.env.DEBUG = "dialogflow:debug"; // enables lib debugging statements
+exports.dialogflowFirebaseFulfillment = functions.https.onRequest(
+    (request, response) => {
+        const agent = new WebhookClient({ request, response });
+
+        function setNotify(agent) {
+            const param = request.body.queryResult.parameters;
+            const baseCurrency = param.baseCurrency[0].toUpperCase();
+            const lower = param.lowerThen ? "LOWER" : "";
+            const higher = param.higherThen ? "HIGHER" : "";
+            const key = `${param.market}_${baseCurrency}_THB`;
+            const priceLowerThan = lower === "LOWER" ? { priceLowerThan: param.number[0] } : null;
+            const priceHigherThan = lower === "HIGHER" ? { priceHigherThan: param.number[0] } : null;
+            const dataUpdate = {
+                key: key.toUpperCase(),
+                ...priceLowerThan,
+                ...priceHigherThan
+            }
+
+            functions.logger.info(dataUpdate);
+            firestore
+                .collection("conditions")
+                .doc(`${key}_${lower}${higher}`)
+                .set(dataUpdate);
+            agent.add(`ตั้งเตือนเรียบร้อย`);
+        }
+
+        let intentMap = new Map();
+        intentMap.set("setNotify", setNotify);
+
+        agent.handleRequest(intentMap);
+    }
+);
 
 async function run() {
     const conditions = await getConditions();
