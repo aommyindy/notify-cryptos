@@ -12,6 +12,7 @@ const regionFunctions = functions.region("asia-northeast3");
 
 const { getMarkets } = require("./utils/markets");
 const { send } = require("./utils/lineNotify");
+const { convert } = require("actions-on-google/dist/service/actionssdk");
 
 exports.run = regionFunctions.https.onRequest(async (req, res) => {
     const conditions = await getConditions();
@@ -32,14 +33,9 @@ process.env.DEBUG = "dialogflow:debug"; // enables lib debugging statements
 exports.dialogflowFirebaseFulfillment = functions.https.onRequest(
     (request, response) => {
         const agent = new WebhookClient({ request, response });
-        const param = request.body.queryResult.parameters;
-        const baseCurrency = param.baseCurrency;
-        const lower = param.lowerThen ? "LOWER" : "";
-        const higher = param.higherThen ? "HIGHER" : "";
-        const key = `${param.market}_${baseCurrency}_THB`.toUpperCase();
-        const docKey = `${key}_${lower}${higher}`.toUpperCase();
 
         function setNotify(agent) {
+            const { param, baseCurrency, lower, higher, key, docKey } = requestData(request);
             const priceLowerThan =
                 lower === "LOWER" ? { priceLowerThan: param.number } : null;
             const priceHigherThan =
@@ -55,7 +51,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest(
             if (
                 typeof param.market == "string" ||
                 typeof param.number == "number" ||
-                typeof param.baseCurrency == "string"
+                typeof baseCurrency == "string"
             ) {
                 functions.logger.info(dataUpdate);
                 firestore.collection("conditions").doc(docKey).set(dataUpdate);
@@ -66,6 +62,7 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest(
         }
 
         function delNotify(agent) {
+            const { param, lower, higher, key, docKey } = requestData(request);
             if (
                 typeof param.market === "string" &&
                 typeof param.baseCurrency === "string"
@@ -86,9 +83,24 @@ exports.dialogflowFirebaseFulfillment = functions.https.onRequest(
             }
         }
 
+        async function allNotify (agent) {
+            const conditions = await getConditions();
+
+            const allCondition = conditions.map((condition) => {
+                const priceLower = condition.priceLowerThan || false;
+                const priceHigher = condition.priceHigherThan || false;
+                const conditionWithPrice = priceLower ? `น้อยกว่า ${priceLower}` : `มากกว่า ${priceHigher}`
+                return `${condition.key} ${conditionWithPrice}`;
+            });
+
+            agent.end(allCondition.toString().replace(/,/g, `
+`))
+        }
+
         let intentMap = new Map();
         intentMap.set("setNotify", setNotify);
         intentMap.set("delNotify", delNotify);
+        intentMap.set("allNotify", allNotify);
 
         agent.handleRequest(intentMap);
     }
@@ -133,4 +145,15 @@ function checkConditions(condition, crypto) {
     if (crypto.lastPrice > condition.priceHigherThan) {
         return `${crypto.baseCurrency}  ${crypto.lastPrice} > ${condition.priceHigherThan} ${crypto.quoteCurrency}`;
     }
+}
+
+function requestData(request) {
+    const param = request.body.queryResult.parameters;
+    const baseCurrency = param.baseCurrency;
+    const lower = param.lowerThen ? "LOWER" : "";
+    const higher = param.higherThen ? "HIGHER" : "";
+    const key = `${param.market}_${baseCurrency}_THB`.toUpperCase();
+    const docKey = `${key}_${lower}${higher}`.toUpperCase();
+
+    return { param, baseCurrency, lower, higher, key, docKey };
 }
