@@ -15,11 +15,9 @@ const { send } = require("./utils/lineNotify");
 
 exports.run = regionFunctions.https.onRequest(async (req, res) => {
     const conditions = await getConditions();
-    const { keys, cryptos } = await getMarkets();
 
     res.json({
         conditions,
-        keys,
     });
 });
 
@@ -34,31 +32,63 @@ process.env.DEBUG = "dialogflow:debug"; // enables lib debugging statements
 exports.dialogflowFirebaseFulfillment = functions.https.onRequest(
     (request, response) => {
         const agent = new WebhookClient({ request, response });
+        const param = request.body.queryResult.parameters;
+        const baseCurrency = param.baseCurrency;
+        const lower = param.lowerThen ? "LOWER" : "";
+        const higher = param.higherThen ? "HIGHER" : "";
+        const key = `${param.market}_${baseCurrency}_THB`.toUpperCase();
+        const docKey = `${key}_${lower}${higher}`.toUpperCase();
 
         function setNotify(agent) {
-            const param = request.body.queryResult.parameters;
-            const baseCurrency = param.baseCurrency[0].toUpperCase();
-            const lower = param.lowerThen ? "LOWER" : "";
-            const higher = param.higherThen ? "HIGHER" : "";
-            const key = `${param.market}_${baseCurrency}_THB`;
-            const priceLowerThan = lower === "LOWER" ? { priceLowerThan: param.number[0] } : null;
-            const priceHigherThan = lower === "HIGHER" ? { priceHigherThan: param.number[0] } : null;
+            const priceLowerThan =
+                lower === "LOWER" ? { priceLowerThan: param.number } : null;
+            const priceHigherThan =
+                higher === "HIGHER"
+                    ? { priceHigherThan: param.number }
+                    : null;
             const dataUpdate = {
-                key: key.toUpperCase(),
+                key: key,
                 ...priceLowerThan,
-                ...priceHigherThan
-            }
+                ...priceHigherThan,
+            };
 
-            functions.logger.info(dataUpdate);
-            firestore
-                .collection("conditions")
-                .doc(`${key}_${lower}${higher}`)
-                .set(dataUpdate);
-            agent.add(`ตั้งเตือนเรียบร้อย`);
+            if (
+                typeof param.market == "string" ||
+                typeof param.number == "number" ||
+                typeof param.baseCurrency == "string"
+            ) {
+                functions.logger.info(dataUpdate);
+                firestore.collection("conditions").doc(docKey).set(dataUpdate);
+                agent.end(`ตั้งเตือน ${docKey} ${param.number}`);
+            } else {
+                agent.end(`ผิดพลาด ${docKey} ${param.number}`);
+            }
+        }
+
+        function delNotify(agent) {
+            if (
+                typeof param.market === "string" &&
+                typeof param.baseCurrency === "string"
+            ) {
+                if (lower.length === 0 && higher.length === 0) {
+                    const docHigher = `${key}_HIGHER`;
+                    const docLower = `${key}_LOWER`;
+                    firestore.collection("conditions").doc(docHigher).delete();
+                    firestore.collection("conditions").doc(docLower).delete();
+                    agent.end(`ยกเลิกเตือนเรียบร้อย ${docHigher} และ ${docLower}`);
+                } else {
+                    firestore.collection("conditions").doc(docKey).delete();
+                    agent.end(`ยกเลิกเตือนเรียบร้อย ${docKey}`);
+                }
+                
+            } else {
+                agent.end(`ผิดพลาด ${docKey}`);
+            }
         }
 
         let intentMap = new Map();
         intentMap.set("setNotify", setNotify);
+        intentMap.set("delNotify", delNotify);
 
         agent.handleRequest(intentMap);
     }
