@@ -16,9 +16,17 @@ const { convert } = require("actions-on-google/dist/service/actionssdk");
 
 exports.run = regionFunctions.https.onRequest(async (req, res) => {
     const conditions = await getConditions();
+    const { keys, cryptos } = await getMarkets();
 
-    res.json({
-        conditions,
+    conditions.forEach(async (condition) => {
+        const index = keys.indexOf(condition.key);
+        const crypto = cryptos[index];
+        if (crypto) {
+            res.json({
+                conditions,
+                crypto
+            });
+        }
     });
 });
 
